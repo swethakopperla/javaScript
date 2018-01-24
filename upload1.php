@@ -34,8 +34,7 @@ echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
 
 $image=$_FILES["file"]["name"]; /* Displaying Image*/
       $img="upload/".$image;
-      echo '<img src= "upload/$img>'; 
-
+    echo  "<img src=\"upload/$img\">"
       }
     }
   }
