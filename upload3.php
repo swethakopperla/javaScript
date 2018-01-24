@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
        // prevent timezone warnings
        date_default_timezone_set('Philippines/Manila');
@@ -44,3 +46,5 @@ HEREDOC;
 <?php
  }
 ?>
+</body>
+</html>
