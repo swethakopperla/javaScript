@@ -5,8 +5,8 @@ if(!empty($_GET['id'])){
     //DB details
     $dbHost     = 'localhost';
     $dbUsername = 'root';
-    $dbPassword = '*****';
-    $dbName     = 'codexworld';
+    $dbPassword = 'Root@1234';
+    $dbName     = 'swetha';
     
     //Create connection and select DB
     $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
