@@ -35,10 +35,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 if($_FILES["photo"]["error"] > 0){
     echo "Error: " . $_FILES["photo"]["error"] . "<br>";
 } else{
-    echo "File Name: " . $_FILES["photo"]["name"] . "<br>";
-    echo "File Type: " . $_FILES["photo"]["type"] . "<br>";
-    echo "File Size: " . ($_FILES["photo"]["size"] / 1024) . " KB<br>";
-    echo "Stored in: " . $_FILES["photo"]["tmp_name"];
+   $filename=$_FILES["photo"]["name"];
+   $filetype=$_FILES["photo"]["type"];
+   $filesize=($_FILES["photo"]["size"] / 1024);
+   $Storedin=$_FILES["photo"]["tmp_name"];  
+
+    echo "File Name: " . $filename . "<br>";
+    echo "File Type: " . $filetype . "<br>";
+    echo "File Size: " . $filesize . " KB<br>";
+    echo "Stored in: " . $Storedin;
 }
 
 ?>
