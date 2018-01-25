@@ -46,7 +46,7 @@ if($_FILES["photo"]["error"] > 0){
     echo "File Type: " . $filetype . "<br>";
     echo "File Size: " . $filesize . " KB<br>";
     echo "Stored in: " . $Storedin;
-  echo " <img src="."$image"." alt="Girl in a jacket" width="500" height="600">
+  //echo " <img src="."$image"." alt="Girl in a jacket" width="500" height="600">
 }
 
 ?>
